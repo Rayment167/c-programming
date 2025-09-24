@@ -13,3 +13,9 @@ void main() {
                 printf("This number is odd");
         }
 }
+output
+Enter the number:6
+This number is even
+
+Enter the number:5
+This number is odd
