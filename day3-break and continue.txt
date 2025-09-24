@@ -1,0 +1,36 @@
+                    break and continue
+
+
+
+
+
+#include<stdio.h>
+int main() {
+    int i,n;
+    printf("Enter a number:");
+    scanf("%d",&i);
+    printf("Enter n:");
+    scanf("%d",&n);
+    while(i<n) {
+        i++;
+        if(i==n) {
+            continue;
+        }
+        if(i>n) {
+            break;
+        }
+    
+    printf("%d\n",i);
+    }
+   return 0; 
+}
+output
+
+Enter a number:7
+Enter n:14
+8
+9
+10
+11
+12
+13
