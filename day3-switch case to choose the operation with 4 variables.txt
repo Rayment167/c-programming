@@ -1,0 +1,69 @@
+                        switch case to choose the operation by a number with 4 variable
+
+
+#include <stdio.h>
+int main() {
+    int a,b,c,d,result;
+    int choice;
+    printf("Enter a number1:");
+    scanf("%d",&a);
+     printf("Enter a number2:");
+     scanf("%d",&b);
+    printf("Enter a number3:");
+    scanf("%d",&c);
+     printf("Enter a number4:");
+     scanf("%d",&d);
+    printf("1.Addition\n2.Subraction\n3.Multiplication\n4.Average\n,5.Maximum value\n6. Minimum value\n");
+     scanf("%d",&choice);
+
+    switch (choice) {
+        case 1:
+            result = a + b + c + d;
+            printf("Sum: %d\n", result);
+            break;
+        case 2:
+            result = a - b- c - d;
+            printf("Sum: %d\n", result);
+            break;
+        case 3:
+            result =(a *b * c * d);
+            printf("Sum: %d\n", result);
+            break;
+        case 4:
+            result =(a+b+c+d)/4;
+            printf("Sum: %d\n", result);
+            break;
+        case 5:
+             int max = a;
+            if (b > max) max = b;
+            if (c > max) max = c;
+            if (d > max) max = d;
+            printf("Maximum: %d\n", max);
+            break;
+        case 6:
+            int min = a;
+            if (b < min) min = b;
+            if (c < min) min = c;
+            if (d < min) min = d;
+            printf("Minimum: %d\n", min);
+            break;
+        default:
+            printf("invalid\n");
+    }
+
+    return 0;
+}
+output
+
+Enter a number1:9
+Enter a number2:7
+Enter a number3:6
+Enter a number4:10
+1.Addition
+2.Subraction
+3.Multiplication
+4.Average
+,5.Maximum value
+6. Minimum value
+5
+Maximum: 10

@@ -1,0 +1,61 @@
+                        switch case tochoose the operation by a number.
+
+
+
+
+#include <stdio.h>
+int main() {
+    int a,b,result;
+    int choice;
+    printf("Enter a number1:");
+    scanf("%d",&a);
+     printf("Enter a number2:");
+     scanf("%d",&b);
+     printf("1.Addition\n;2.Subraction\n;3.Multiplication\n;4.Division\n;5. Apower(B)\n;6.Bpower(A)\n");
+     scanf("%d",&choice);
+     switch(choice) {
+           case 1:
+            result = a + b;
+            printf("Result of addition: %d\n", result);
+            break;
+        case 2:
+            result = a - b;
+            printf("Result of subtraction: %d\n", result);
+            break;
+        case 3:
+            result = a * b;
+            printf("Result of multiplication: %d\n", result);
+            break;
+        case 4:
+            if (b != 0) {
+                printf("Result of division: %.2f\n", (float)a / b);
+            } else {
+                printf("Error: Division by zero!\n");
+            }
+            break;
+            case 5:
+                 result = a ^ b;
+            printf("Result of A power (B): %d\n", result);
+            break;
+            case 6:
+                 result = b ^ a;
+            printf("Result of B power (A): %d\n", result);
+            break;
+        default:
+            printf("Invalid choice\n");
+    }
+     return 0;
+}
+
+output
+
+Enter a number1:4
+Enter a number2:5
+1.Addition
+;2.Subraction
+;3.Multiplication
+;4.Division
+;5. Apower(B)
+;6.Bpower(A)
+3
+Result of multiplication: 20

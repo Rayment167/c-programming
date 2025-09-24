@@ -1,0 +1,17 @@
+                               to print numbers from 0 to given number-1.
+
+#include<stdio.h>
+int main() {
+    int n,i;
+    printf("Enter a number:");
+    scanf("%d",&n);
+    for(i=0;i<n;i++) {
+        printf("%d\t",i);
+    }
+    return 0;
+}
+
+output
+
+Enter a number:5
+0	1	2	3	4	
