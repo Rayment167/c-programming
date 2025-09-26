@@ -1,0 +1,33 @@
+                                             Count  positive, negative and zero
+
+#include <stdio.h>
+int main() {
+    int n, i;
+    int countPos = 0, countNeg = 0, countZero = 0;
+    printf("Enter the number of elements: ");
+    scanf("%d", &n);
+    int arr[n];
+    printf("Enter %d integers:\n", n);
+    for(i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+        if(arr[i] > 0)
+            countPos++;
+        else if(arr[i] < 0)
+            countNeg++;
+        else
+            countZero++;
+    }
+    printf("Positive numbers: %d\n", countPos);
+    printf("Negative numbers: %d\n", countNeg);
+    printf("Zeroes: %d\n", countZero);
+    return 0;
+}
+
+output
+
+Enter the number of elements: 5
+Enter 5 integers:
+6 -1 0 0 -3
+Positive numbers: 1
+Negative numbers: 2
+Zeroes: 2
