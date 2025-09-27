@@ -1,0 +1,26 @@
+                                           To count words
+#include <stdio.h>
+#include <ctype.h>
+int main() {
+    char str[100];
+    int i = 0, wordCount = 0, inWord = 0;
+    printf("Enter a string: ");
+    fgets(str, sizeof(str), stdin); 
+    while (str[i] != '\0') {
+        if (isspace(str[i])) {
+            inWord = 0; 
+        } else if (inWord == 0) {
+            inWord = 1;
+            wordCount++;
+        }
+        i++;
+    }
+    printf("Total number of words: %d\n", wordCount);
+    return 0;
+}
+
+output
+
+Enter a string: word to be counted
+Total number of words: 4
+
