@@ -1,0 +1,19 @@
+                                                      length of string
+
+
+#include <stdio.h>
+void main() {
+    char str[100];
+    int v = 0;
+    printf("Enter a String: ");
+    scanf("%s", str);
+    for (int i = 0; str[i] != '\0'; i++) {
+        v++;
+    }
+    printf("Length of the string is %d\n", v);
+}
+
+output
+
+Enter a String: length
+Length of the string is 6
